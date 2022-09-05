@@ -32,7 +32,7 @@ jobs:
           pip install cyclonedx-bom
       - name: Scan SBOM
         run: |
-          cve-bin-tool -n json -i cyclonedx.xml
+          cve-bin-tool -n json -i cyclone.xml
      
 
        
