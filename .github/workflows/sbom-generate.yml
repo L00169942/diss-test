@@ -30,11 +30,6 @@ jobs:
       - name: Install Cyclone DX
         run : |
           pip install cyclonedx-bom
-
-      - name: Generate SBOM
-        run: |
-          cyclonedx-bom -r
-          dir
       - name: Scan SBOM
         run: |
           cve-bin-tool -n json -i cyclonedx.xml
